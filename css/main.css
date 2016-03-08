@@ -1,0 +1,239 @@
+/******************************************
+GENERAL
+******************************************/
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	margin: 0;
+}
+
+p {
+	line-height: 160%;
+	margin-bottom: 10px;
+}
+
+li {
+	list-style: none;
+}
+
+
+/******************************************
+HEADER
+******************************************/
+
+header {
+	text-align: center;
+	margin: 0 0 1.5em;
+}
+
+h1 {
+	display: block;
+	width: 100%;
+	font-size: 17vw;
+	display: inline-block;
+}
+
+nav ul {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+}
+
+nav li {
+	font-size: 5vw;
+	font-weight: bold;
+	float: left;
+	margin-bottom: 0.5em;
+}
+
+nav li a {
+	padding: 0.4em 1em 1em;
+}
+
+
+
+/******************************************
+BODY
+******************************************/
+
+.social-media-bar {
+	text-align: center;
+}
+
+.social-media-bar ul {
+	padding: 0;
+	display: inline-block;
+}
+
+.social-media-bar li {
+	float: left;
+}
+
+.social-media-bar li a {
+	font-family: 'courier new', 'consolas';
+	font-weight: bold;
+	font-size: 5vw;
+	padding: .3em .7em;
+	margin: 0 .4em;
+}
+
+#glamour-div {
+	padding: 10% 10%;
+	box-sizing: border-box;
+}
+
+.glamour-shot {
+	display: block;
+	margin: 0 auto;
+	border: 5px solid;
+	border-radius: 100%;
+}
+
+.bio {
+	padding: 0 1.5em 1em;
+	font-size: 5vw;
+}
+
+.bio h2 {
+	font-size: 5.9vw;
+	padding-bottom: 1vh;
+}
+
+
+
+
+
+/******************************************
+FOOTER
+******************************************/
+
+/* for "sticky footer" per Modern Clean CSS Sticky Footer guide */
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin: 0 0 135px; /* bottom = total footer height */
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 115px;
+	width: 100%;
+	border-top: solid 10px;
+	border-bottom: solid 10px;
+}
+
+footer p {
+	padding: 0 .5em;
+	text-align: center;
+}
+
+.footer-social-media-bar {
+	text-align: center;
+}
+
+.footer-social-media-bar ul {
+	padding: 0;
+	display: inline-block;
+}
+
+.footer-social-media-bar li {
+	float: left;
+}
+
+.footer-social-media-bar li a {
+	font-size: 1.2em;
+	padding: 0 .5em;
+}
+
+
+
+/******************************************
+COLORS
+******************************************/
+
+/****** PALETTE ******
+
+DARK PURPLE	#262335
+PURPLE		#8078AA
+SALMON		#FF6072
+SKY BLUE	#BCE2EF
+WHITE-BLUE	#F5FCFF
+
+******* ------- ******/
+
+/* site body */
+body {
+	background-color: #FBFEFF;
+	color: #262335;
+}
+
+nav li {
+	color: #FF6072;
+}
+
+h1 {
+	background-color: #FF6072;
+	color: #FFF;
+}
+
+a, a:visited {
+	color: #FF6072;
+}
+
+a:hover {
+	color: #BCE2EF;
+}
+
+.glamour-shot {
+	border-color: #262335;
+}
+
+.social-media-bar {
+	color: #FF6072;
+}
+
+.social-media-bar li a {
+	background-color: #262335;
+}
+
+footer {
+	border-color: #8078AA;
+	background-color: #262335;
+	color: #BCE2EF;
+}
+
+
+/******************************************
+CLEARFIX
+******************************************/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
