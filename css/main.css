@@ -113,6 +113,28 @@ BODY
 
 
 
+/******************************************
+SHOWCASE
+******************************************/
+
+.showcase ul {
+	text-align: center;
+	padding: 0;
+}
+
+.showcase li {
+	margin: 2em 0em;
+}
+
+.showcase img {
+	max-width: 70%;
+	border: solid 5px;
+}
+
+.showcase p {
+	padding: 0 20px;
+	font-size: 1.5em;
+}
 
 
 /******************************************
@@ -179,6 +201,7 @@ WHITE-BLUE	#F5FCFF
 ******* ------- ******/
 
 /* site body */
+
 body {
 	background-color: #FBFEFF;
 	color: #262335;
@@ -217,6 +240,12 @@ footer {
 	border-color: #8078AA;
 	background-color: #262335;
 	color: #BCE2EF;
+}
+
+/* Work Page */
+
+.showcase a {
+	color: #262335;
 }
 
 

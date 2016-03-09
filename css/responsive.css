@@ -40,6 +40,7 @@
   header {
   	padding: 20px 0 0;
   	background-color: #FF6072;
+    border-bottom: solid 10px #262335;
   }
 
   h1 {
@@ -102,6 +103,15 @@
   .bio p {
   	font-size: 14pt;
   }
+
+  /* Work Page */
+
+  .showcase li {
+    float: left;
+  }
+
+
+}
 
 @media screen and (min-width: 1000px) {
 
