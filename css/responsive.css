@@ -107,8 +107,7 @@
   /* Work Page */
 
   .showcase li {
-    float: left;
-  }
+    display: inline-block;
 
 
 }
