@@ -86,6 +86,7 @@ BODY
 	font-weight: bold;
 	font-size: 5vw;
 	padding: .3em .7em;
+	border-radius: 7%;
 	margin: 0 .4em;
 }
 
@@ -123,7 +124,7 @@ SHOWCASE
 }
 
 .showcase li {
-	margin: 2em 0em;
+	margin: 2em 0;
 }
 
 .showcase img {
@@ -201,25 +202,28 @@ WHITE-BLUE	#F5FCFF
 ******* ------- ******/
 
 /* site body */
-
 body {
 	background-color: #FBFEFF;
 	color: #262335;
 }
 
+/* header nav link color */
 nav li {
 	color: #FF6072;
 }
 
+/* "Billy Leet" title color"*/
 h1 {
-	background-color: #FF6072;
+	background-color: #262335; 
 	color: #FFF;
 }
 
+/* links (including social media) */
 a, a:visited {
 	color: #FF6072;
 }
 
+/* link hover color */
 a:hover {
 	color: #BCE2EF;
 }
@@ -228,9 +232,9 @@ a:hover {
 	border-color: #262335;
 }
 
-.social-media-bar {
+/*.social-media-bar {
 	color: #FF6072;
-}
+}*/
 
 .social-media-bar li a {
 	background-color: #262335;
@@ -243,7 +247,6 @@ footer {
 }
 
 /* Work Page */
-
 .showcase a {
 	color: #262335;
 }
