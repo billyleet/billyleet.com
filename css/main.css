@@ -160,6 +160,7 @@ footer {
 	width: 100%;
 	border-top: solid 10px;
 	border-bottom: solid 10px;
+	padding-top: 10px;
 }
 
 footer p {
@@ -214,7 +215,7 @@ nav li {
 
 /* "Billy Leet" title color"*/
 h1 {
-	background-color: #262335; 
+	background-color: #262335;
 	color: #FFF;
 }
 
