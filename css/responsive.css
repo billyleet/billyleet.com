@@ -111,7 +111,11 @@
 
   .showcase li {
     display: inline-block;
+  }
 
+  .blog {
+  	padding: 0 20%;
+  }
 
 }
 
