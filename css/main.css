@@ -45,6 +45,11 @@ h1 {
 	display: inline-block;
 }
 
+header h1 {
+	font-family: 'Satisfy', cursive;
+	font-weight: 400;
+}
+
 nav ul {
 	display: inline-block;
 	list-style: none;
@@ -61,7 +66,6 @@ nav li {
 nav li a {
 	padding: 0.4em 1em 1em;
 }
-
 
 
 /******************************************
@@ -82,12 +86,16 @@ BODY
 }
 
 .social-media-bar li a {
-	font-family: 'courier new', 'consolas';
-	font-weight: bold;
-	font-size: 5vw;
-	padding: .3em .7em;
+	padding: .6em .7em .3em;
 	border-radius: 7%;
 	margin: 0 .4em;
+}
+
+.social-media-bar img {
+	height: auto;
+	width: auto;
+	max-height: 1.2em;
+	max-width: 1.2em;
 }
 
 #glamour-div {
@@ -125,6 +133,7 @@ SHOWCASE
 
 .showcase li {
 	margin: 2em 0;
+	max-width: 400px;
 }
 
 .showcase img {
@@ -135,8 +144,24 @@ SHOWCASE
 .showcase p {
 	padding: 0 20px;
 	font-size: 1.5em;
+	max-width: 500px;
 }
 
+
+
+/******************************************
+BLOG
+******************************************/
+
+.blog {
+	margin: auto;
+	padding: 0 10%;
+	max-width: 800px;
+}
+
+.blog h2 {
+	font-size: 36px;
+}
 
 /******************************************
 FOOTER
@@ -170,6 +195,13 @@ footer p {
 
 .footer-social-media-bar {
 	text-align: center;
+}
+
+.footer-social-media-bar img {
+	height: auto;
+	width: auto;
+	max-height: 30px;
+	max-width: 30px;
 }
 
 .footer-social-media-bar ul {
@@ -242,9 +274,9 @@ a:hover {
 }
 
 footer {
-	border-color: #8078AA;
+	border-color: #FF6072;
 	background-color: #262335;
-	color: #BCE2EF;
+	color: #FFF;
 }
 
 /* Work Page */
