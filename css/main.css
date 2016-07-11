@@ -48,6 +48,13 @@ h1 {
 header h1 {
 	font-family: 'Satisfy', cursive;
 	font-weight: 400;
+	/*-webkit-text-stroke-width: 2px;*/
+	/*-webkit-text-stroke-color: #262335;*/
+	text-shadow:
+		1px -1px 0 #262335,
+		1px 1px 0 #262335;
+		/*-1px 1px 0 #262335,
+		-1px -1px 0 #262335;*/
 }
 
 nav ul {
@@ -161,6 +168,10 @@ BLOG
 
 .blog h2 {
 	font-size: 36px;
+}
+
+.blog hr {
+	margin-top: 18pt;
 }
 
 /******************************************
