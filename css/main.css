@@ -51,7 +51,19 @@ h2 {
 }
 
 h3 {
-	font-size: 1.7em;
+	font-size: 2em;
+	font-weight: lighter;
+}
+
+h4 {
+	font-size: 14pt;
+}
+
+hr {
+	border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 header h1 {
@@ -182,6 +194,7 @@ BLOG
 
 .blog {
 	margin: auto;
+	margin-bottom: 20px;
 	padding: 0 10%;
 	max-width: 800px;
 }
@@ -192,6 +205,31 @@ BLOG
 
 .blog h2 {
 	text-align: center;
+}
+
+.word-wrapper {
+	text-align: center;
+}
+.word {
+	text-align: center;
+	color: #8078AA;
+	border: 2px #262335 solid;
+	border-radius: 5px;
+	display: inline-block;
+	padding: .5em;
+	font-size: 100%;
+}
+
+.blog img {
+	max-width: 75%;
+	border: 4px #262335 solid;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 3em; auto;
+}
+
+.no-border img {
+	border: 0;
 }
 
 /******************************************
