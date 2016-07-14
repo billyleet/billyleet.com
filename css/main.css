@@ -222,10 +222,10 @@ BLOG
 
 .blog img {
 	max-width: 75%;
-	border: 4px #262335 solid;
+	border: 3px #262335 solid;
 	border-radius: 10px;
-	display: inline-block;
-	margin: 3em; auto;
+	display: block;
+	margin: 3em auto;
 }
 
 .no-border img {
