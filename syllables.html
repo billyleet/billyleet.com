@@ -34,11 +34,11 @@
 
         <div class="wrapper blog">
 
-            <h2>Designing a Syllable&nbsp;App<h2>
+            <h2>Creating a Syllable&nbsp;App<h2>
             <h3>Goals, Process, and Design</h3>
 
             <hr>
-            <h3>WHY?</h3>
+            <h3>BACKGROUND</h3>
             <p>For children learning to read, segmenting a word into its syllables is an important part of the decoding process. A dauntingly long word to a 6 year old can become a lot less scary when broken up into smaller chunks. <!-- This is especially true for longer words that are hard to sight read.  --> Even as adults, we only have a passive awareness of syllables to help us break unknown new words into intelligible bits.</p>
             <p><!-- However, most native-speakers of any language don’t give much thought to syllables in spoken language; you have generally mastered the art of breaking your own language into bits, and do so subconsciously. -->For non-native speakers, particularly of English, it can be difficult to identify <strong>syllable boundaries</strong> or the places we choose to break up words into syllables. Learning to explicitly identify these boundaries can help non-native speakers improve their awareness of English sounds, and will lead to better listening and speaking skills.</p>
             <p><strong>Stress</strong> is also an important aspect of English pronunciation that is often not well understood by non-native speakers. <!-- (Think about the sentence “His <em>courage</em> makes him <em>courageous</em>.” The two forms of “courage” sound very distinct due to differences in stress.) --> Learning how to use stress properly in English can be the best way to improve pronunciation for an ESL speaker. Stress and syllables are intricately tied, and it’s necessary to first identify the syllables in a word before one can decide which syllable needs stress.</p>
@@ -48,17 +48,35 @@
             <hr> -->
             <h3>FEATURE OUTLINE</h3>
             <h4>1. Syllable Boundaries</h4>
-            <p><strong>abracadabra → a-bra-ca-da-bra</strong></p>
-            <p>The student will be shown an undivided word with at least two syllables, and will have to choose where to segment the word into its syllables.</p>
+            <div class="word-wrapper"><p class="word">abracadabra&nbsp;→ a&#8209;bra&#8209;ca&#8209;da&#8209;bra</p></div>
+            <p>The student will be shown an undivided word with at least three syllables, and will have to choose where to place "boundaries" to segment the word into its syllables.</p>
             <h4>2. Stressed Syllable Identification</h4>
-            <p><strong>me-la-to-nin → me-la-TO-nin</strong></p>
+            <div class="word-wrapper"><p class="word">me&#8209;la&#8209;to&#8209;nin&nbsp;→ me&#8209;la&#8209;TO&#8209;nin</p></div>
             <p>The student will be shown a word that has already been segmented into syllables, and will have
             to choose the syllable that carries stress.</p>
             <h4>3. Two-in-One</h4>
-            <p><strong>demonstrate → de-mon-strate → DE-mon-strate</strong></p>
+            <div class="word-wrapper"><p class="word">demonstrate&nbsp;→ de&#8209;mon&#8209;strate&nbsp;→ DE&#8209;mon&#8209;strate</p></div>
             <p>This will be a combination of the previous two features: the student will be shown an undivided word, choose where to segment the word into its syllables, and then identify the syllable that carries stress.</p>
             <h4>4. Review</h4>
-            <p>After each round, you will see your tally of how many answers you had correct, and you will have the opportunity to go back and review your missed words. You can also choose to play with only with your most-missed words, so you can practice the ones that need the most help.</p>
+            <p>After each round, the student will see their tally of how many answers they had correct, and they will have the opportunity to go back and review missed words. They can also choose to review all the words they've missed in a list-format, which provides a quick-reference of the most difficult words for that student.</p>
+            <hr>
+            <h3>USER FLOW</h3>
+            <p>After delineating which features should be included, I created the following user flow. This diagram served as documentation of each step a user would take as they went through the app, and provided an outline for the screens into which the above features could be integrated. I tried to create a logical progression from one step to the next, with the aim of maximizing the user's learning while allowing for adequate control and feedback.</p>
+            <img style="border: none;" src="assets/syllablesuserflow.png" alt="Syllables User Flow">
+            <p>The idea is to begin at a launch pad from where students can choose from four possible tracks: three games, and a review feature. Each game starts by prompting the user to choose the number of syllables they'd like to practice, and then following each game's respective process. The review feature allows users to see a list of words they'd like to practice, and then dig deeper into a word to see its syllable division and audio pronunciaton.</p>
+            <hr>
+            <h3>WIREFRAMES</h3>
+            <p>Creating the user flow gave me a good sense of how I'd like to layout the app, but it wasn't a complete picture. I decided to sketch out wireframes for each screen, using the user flow as a guide, in order to get a better sense of how each specific feature would work. I also wanted to ensure I was allowing for enough control and feedback for users to successfully navigate the app.</p>
+            <img src="assets/postitwireframes.jpg" alt="Syllables Wireframe Post-Its">
+            <p>There is nothing especially fancy about these pencil scribbles on Post-Its, but they serve as an important step toward a fleshed-out future design. I went through several iterations for the layout of each game, thinking of various ways a user could input their guesses and considering the pedagogical best practices I'd learned in the past. After dozens of crumpled up Post-Its, I landed on these designs.</p>
+            <p>I played with different visual elements for each game, but one I really struggled with was how to best allow users to create a "boundary" between letters for syllable division. I decided to provide a boundary "stockpile," allowing the student to drag a boundary from the stockpile to the space between two letters and dropping it to create a visual division. I also chose to provide feedback as to how many boundaries were left by showing <code>&nbsp;Remaining: 2 </code>, which clues students in on how many total syllables the word should have when they're done inputting boundaries.</p>
+            <hr>
+            <h3>THE FUTURE</h3>
+            <h4>Next Steps</h4>
+            <p>I'm very happy with the goals of this project, and I plan to flesh it out into a fully workable app in the near future. I envision fleshing out the wireframes into a testable low-fidelity prototype, then conducting some preliminary user research with ESL students to see how they react to the features I've included so far. I'll incorporate their feedback into to a functional high-fidelity prototype, which I can test again before finally laying down code.</p>
+            <h4>Other Considerations</h4>
+            <p>I have a growing list of further considerations that should be addressed with research participants, including the ideal number of syllables to practice based on skill-level, the number of word trials to include in each game, and the crucial question of where the vocabulary should be sourced from. A predefined list of words that ESL students often struggle with could work, but allowing users to define their own wordlists would be nice too.</p>
+            <p>There are certainly hypotheticals yet to address and more design work to be done, but I'm generally excited about this fun project, and I have high hopes for its future!</p>
 
         </div>
 
@@ -76,7 +94,7 @@
 	        	</ul>
     	    </div>
 
-            <p>Built from scratch by Billy Leet &copy; 2016.</p>
+            <p>Built from scratch by Billy Leet &copy; 2016</p>
         </footer>
     </body>
 </html>
