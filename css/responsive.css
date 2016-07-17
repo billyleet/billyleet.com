@@ -107,18 +107,38 @@
   	font-size: 14pt;
   }
 
+  .blog .quote {
+      font-size: 1.3em;
+  }
+
   /* Work Page */
 
   .blog {
-  	padding: 0 20%;
+  	padding: 0 23% 3em;
   }
 
-  img.side-image {
+  img.side-image-right {
       margin-top: 0;
-      margin-bottom: .5em;
+      margin-bottom: 1em;
       margin-left: 1em;
       float: right;
       max-width: 40%;
+  }
+
+  img.side-image-left {
+      margin-top: 0;
+      margin-bottom: .5em;
+      margin-right: 1.5em;
+      float: left;
+      max-width: 35%;
+  }
+
+  .blog hr, h4 {
+      clear: both;
+  }
+
+  h4 {
+      padding-top: 1.5em;
   }
 
 }
@@ -137,5 +157,21 @@
  		margin: 0 auto;
  		max-width: 1350px;
  	}
+
+    .blog {
+        max-width: 800px;
+    }
+
+}
+
+@media screen and (min-height: 1000px) {
+
+ 	.social-media-bar {
+        padding-bottom: 8vh;
+    }
+
+    .showcase ul {
+        padding-top: 10vh;
+    }
 
 }
