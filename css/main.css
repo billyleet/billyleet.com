@@ -233,6 +233,10 @@ BLOG
 	margin: 3em auto;
 }
 
+.iphone-size {
+	max-height: 412px;
+}
+
 .no-border img {
 	border: 0;
 }
