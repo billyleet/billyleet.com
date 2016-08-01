@@ -226,6 +226,15 @@ BLOG
 	font-size: 100%;
 }
 
+.word2 {
+	text-align: center;
+	display: inline-block;
+	padding: .1em;
+	font-family: 'Satisfy', cursive;
+	font-size: 200%;
+	margin: .5em;
+}
+
 .blog img {
 	max-width: 75%;
 	border: 3px #262335 solid;
