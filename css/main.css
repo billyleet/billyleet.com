@@ -234,6 +234,8 @@ BLOG
 	margin: .5em;
 }
 
+
+
 .blog .word-wrapper .word2 {
 	font-size: 1.6em;
 }
@@ -259,6 +261,25 @@ BLOG
 	font-family: 'Architects Daughter', cursive;
 	color: #8078AA;
 	line-height: 120%;
+}
+
+.rowimages-wrapper {
+	text-align: center;
+}
+
+.rowimages-wrapper img,
+.rowimages-wrapper span {
+	display: inline-block;
+	vertical-align: middle;
+	border: none;
+	margin: 1em .5em;
+	padding-top: 1em;
+	max-width: 15%;
+}
+
+.rowimages-wrapper span {
+	font-size: 1.5em;
+	margin: 0;
 }
 
 /******************************************
