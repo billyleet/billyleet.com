@@ -137,6 +137,14 @@
       max-width: 35%;
   }
 
+  .rowimages-wrapper img {
+      margin: auto 1em;
+  }
+
+  .rowimages-wrapper span {
+      font-size: 2.5vw;
+  }
+
   .blog hr, h4 {
       clear: both;
   }
@@ -152,6 +160,10 @@
  	.bio h2 {
  		margin-top: 15%;
  	}
+
+    .rowimages-wrapper img {
+        margin: auto 2em;
+    }
 
 }
 
