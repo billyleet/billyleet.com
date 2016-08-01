@@ -107,6 +107,10 @@
   	font-size: 14pt;
   }
 
+  .blog .word-wrapper .word2 {
+    font-size: 2em;
+  }
+
   .blog .quote {
       font-size: 1.3em;
   }
