@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+        <title>Billy Leet | VUI Design for ASD</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <header>
+        	<div class="wrapper">
+	        	<nav>
+	        		<ul>
+	        			<li><a href="index.html">About</a></li>
+	        			<li><a id="current-page" href="work.html">Work</a></li>
+                        <li><a href="https://drive.google.com/open?id=0ByW77hax13RkZk0xZWZEeHFodEE">Resume</a></li>
+	        		</ul>
+	        	</nav>
+	        	<a href="index.html" id="title" class="clearfix">
+	        		<h1>Billy Leet</h1>
+	        	</a>
+        	</div>
+        </header>
+
+        <div class="wrapper blog">
+
+            <h2>Voice Interaction for Autism<h2>
+            <h3>A Dialog Flow to Encourage Conversation</h3>
+
+            <hr>
+            <h3>BACKGROUND</h3>
+            <p>Social communication is often targeted as a domain requiring improvement for children with Autism Spectrum Disorders (ASD). It is often necessary to repeatedly practice conversational skills such as turn taking and the sharing of appropriate information. This practice often takes the form of structured, rote conversations that are predictable to both the child and their interlocutor, which helps form a model for what a back-and-forth conversation should look like.</p>
+
+            <p>However, that kind of structured practice is not always available; parents and other caregivers are busy, and having anticipated, repetitive conversations may not be easy for everyone. Further, children with ASD are sometimes more threatened (at first) by social interactions with real people than they are with computers. Computers, which are generally very predictable, can be <a href="http://www.autism-help.org/intervention-sensory-integration-computers.htm"> controlled, non-threatening</a> partners with which to practice conversational skills.</p>
+            <hr>
+            <h3>GOALS</h3>
+            <ul>
+                <li><p>Ask standard questions that one might ask at a first meeting</p></li>
+                <li><p>Check answers and provide feedback according to the answer’s appropriateness</p></li>
+                <li><p>Guide user back to appropriate conversation when necessary, using a model</p></li>
+            </ul>
+            <hr>
+            <h3>ASSUMPTIONS</h3>
+            <p>
+                The system in question has the ability to record an expected set of responses to memory, set by a power user (like a parent). It also has the ability to check a given response against expected response.
+            </p>
+
+            </p>
+            <hr>
+            <h3>SETUP</h3>
+            <p>The first time this game is played, a parent would help set up the game so that it would know what answers to expect from the conversation. The setup process would run through a series of questions that could be asked, and guide the power user how to modify the interactions.
+            <h4>Setup Flow</h4>
+            <p class="voice vicky">Vicky: Hi, I’m Vicky. Let’s start by setting up some questions and answers to keep the conversation flowing. If you don’t want me to ask a certain question, you can say: “Don’t ask that.”
+            <p class="voice vicky">Vicky: What is the name of the person I’ll be talking to?
+            <p class="voice user">Parent: Margaret.
+            <p class="voice vicky">Vicky: So I’ll be chatting with Margaret, is that right?
+            <p class="voice user">Parent: Yes.
+            <p class="voice vicky">Vicky: Great! Now let’s decide what I should talk to Margaret about. Where does Margaret live?
+            <p class="voice user">Parent: We live in Chicago.
+            <p class="voice vicky">Vicky: I see. Margaret lives in Chicago. How about a favorite color?
+            <p class="voice user">Parent: Uhhhhh - let’s not ask that.
+                <p class="voice">&nbsp;&nbsp;&nbsp;&nbsp;* [accept any negative + 'ask' as “Don’t ask that” intention.]</p>
+            <p class="voice vicky">Vicky: No problem, I won’t ask about that. Does Margaret have any brothers or sisters?
+            <p class="voice user">Parent: Yeah, she has an older sister, Melanie.
+            <p class="voice vicky">Vicky: Okay, Margaret has an older sister.
+            <p class="voice vicky">Vicky: That’s about it! I’m ready to have a conversation. Just say “Ready to talk” whenever Margaret wants to chat.
+
+            <hr>
+            <h3>CONVERSATION</h3>
+            <h4>Starting the game</h4>
+            <p class="voice user">Margaret: Ready to talk.
+
+            <h4>First question</h4>
+
+            <p class="voice vicky">Vicky: Hello! What’s your name?
+
+            <p class="voice match">[if match]
+                <p class="voice user">Margaret: My name is Margaret.
+            	<p class="voice vicky">Vicky: Hi Margaret! My name is Vicky.
+
+            <p class="voice no-match">[if no match]
+                <p class="voice user">Margaret: Just like cousin Vicky. [or] My name is mom.
+                <p class="voice vicky">Vicky: Oh really? My name is Vicky. What’s your name?
+        		<p class="voice user">Margaret: I’m Margaret.
+        		<p class="voice vicky">Vicky: Hi Margaret!
+
+            <h4>Second question</h4>
+
+            <p class="voice vicky">Vicky: Where do you live?
+
+            <p class="voice match">[if match]
+                <p class="voice user">Margaret: I live in Chicago.
+                <p class="voice vicky">Vicky: Oh, that’s cool! I live in San Francisco.
+
+            <p class="voice no-match">[if no match]
+                <p class="voice user">Margaret: I can’t have a car. [or] I live in a castle.
+        		<p class="voice vicky">Vicky: Hmm, I live in San Francisco. Where do you live?
+        		<p class="voice user">Margaret: I live in Chicago.
+        		<p class="voice vicky">Vicky: Oh, that’s cool!
+
+            <h4>Third question</h4>
+
+            <p class="voice vicky">Vicky: Do you have any brothers or sisters?
+
+            <p class="voice match">[if match]
+                <p class="voice user">Margaret: I have a sister.
+                <p class="voice vicky">Vicky: That’s nice! I don’t have any brothers or sisters.
+
+            <p class="voice no-match">[if no match]
+                <p class="voice user">Margaret: My name is Margaret.
+        		<p class="voice vicky">Vicky: You could say you have a sister. Do you have any brothers or sisters?
+        		<p class="voice user">Margaret: I have a sister.
+        		<p class="voice vicky">Vicky: That’s nice!
+
+            <hr>
+            <h3>OTHER CONSIDERATIONS</h3>
+            <ul>
+                <li><p>The point of answer matching is not necessarily to get the “right answers”, but to guide conversation down a path that leads to appropriate responses. Knowing that “Chicago” is the expected city isn’t particularly important, but the goal is to encourage answering with a city instead of a non sequitur like “I can’t have a car.”</li>
+                <li><p>Knowing the expected response leads to a better understanding of how the child should answer.</li>
+                <li><p>Time outs after 2 response errors keep the conversation flowing: “Let’s talk about something else.”</li>
+                <li><p>A general time out after a certain number of times playing the game (<i>x</i> number within a 24 hour period) could be enabled to avoid potential obsession.</li>
+            </ul>
+        </div>
+
+        <div class="clearfix"><p> </p></div>
+
+        <footer>
+        	<div class="footer-social-media-bar">
+	        	<ul>
+                    <li><a href="http://linkedin.com/in/wleet"><img src="assets/linkedin.svg" alt="LinkedIn icon"></a></li>
+                    <li><a href="http://github.com/billyleet"><img src="assets/github.svg" alt="Github icon"></a></li>
+                    <li><a href="http://twitter.com/ionictoaster"><img src="assets/twitter.svg" alt="Twitter icon"></a></li>
+	        		<!-- <li><a href="http://facebook.com/bleety">FB</a></li> -->
+	        		<!-- <li><a href="http://instagram.com/ionictoaster">IG</a></li> -->
+                    <li><a href="http://medium.com/billyleet"><img src="assets/medium.svg" alt="Medium icon"></a></li>
+	        	</ul>
+    	    </div>
+
+            <p>Built from scratch by Billy Leet &copy; 2016</p>
+        </footer>
+    </body>
+</html>
