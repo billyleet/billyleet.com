@@ -248,6 +248,10 @@ BLOG
 	margin: 3em auto;
 }
 
+.blog li{
+	list-style: initial;
+}
+
 .iphone-size {
 	max-height: 412px;
 }
@@ -280,6 +284,29 @@ BLOG
 .rowimages-wrapper span {
 	font-size: 1.5em;
 	margin: 0;
+}
+
+/******************************************
+VUI Page
+******************************************/
+
+.voice {
+	font-family: monospace;
+	line-height: 100%;
+}
+
+.vicky {
+	color: #D14F5E;
+}
+
+.match {
+	color: #009688;
+	padding-top: 0.75em;
+}
+
+.no-match {
+	color: #8078AA;
+	padding-top: 0.75em;
 }
 
 /******************************************
