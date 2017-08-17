@@ -178,17 +178,26 @@ SHOWCASE
 	margin: 2em 0;
 	max-width: 400px;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .showcase img {
-	max-width: 70%;
 	border: solid 5px;
 }
 
 .showcase p {
 	padding: 0 20px;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	max-width: 500px;
+	font-weight: bold;
+}
+
+.showcase .subtitle {
+	margin-top: 0;
+	font-size: 1em;
+	max-width: 200px;
+	line-height: normal;
+	font-weight: normal;
 }
 
 
